@@ -49,7 +49,7 @@ main {
 }
 
 .illustration {
-    width:100%;
+    width:100vw;
 }
 
 h1 {
@@ -102,11 +102,12 @@ table {
     padding-top: 20px;
 }
 
-td {
+td{
     width:50%;
     border-bottom: 1px solid var(--stone150);
     padding: 10px 0 10px 20px;
 }
+
 
 .value {
     color: var(--brown800);
@@ -119,3 +120,37 @@ td {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 800px) { /* Styles pour les ordinateurs */
+    
+    body {
+        background-color: var(--stone100);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+
+    main {
+        width:60vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+        background-color: var(--white);
+        padding: 30px;
+        border-radius: 10px;
+        align-items: flex-start;
+    }
+    .illustration {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+
+    li {
+        text-align: justify;
+        padding-left: 10px;
+    }
+
+
+  }
