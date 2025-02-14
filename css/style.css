@@ -1,6 +1,121 @@
+:root {
+    --white:hsl(0, 0%, 100%);
+    --stone100:hsl(30, 54%, 90%);
+    --stone150:hsl(30, 18%, 87%);
+    --stone600:hsl(30, 10%, 34%);
+    --stone900:hsl(24, 5%, 18%);
+    --brown800:hsl(14, 45%, 36%);
+    --rose800:hsl(332, 51%, 32%);
+    --rose50:hsl(330, 100%, 98%);
+}
+
+*, *::after, *::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 100vw;
+    min-width: 320px;
+    font-family: 'Outfit';
+    color: var(--stone600);
+}
+
+main {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+    gap:20px;
+}
+
+.illustration {
+    width:100%;
+}
+
+h1 {
+    font-family: 'Young Serif';
+    color: var(--stone900);
+}
+
+.summary {
+    color: var(--stone600);
+    text-align: justify;
+}
+
+.times {
+    background-color: var(--rose50);
+    width: 100%;
+    padding:20px;
+    border-radius: 10px;
+}
+
+.time-title {
+    color:var(--rose800);
+    font-size: 22px;
+    font-weight: 700;
+}
 
 
+.bold {
+    font-weight: 700;
+}
 
+.category-title {
+    color: var(--brown800);
+    font-size: 28px;
+    font-family: 'Young Serif';
+}
+
+li {
+    padding: 10px 0;
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+    background-color: var(--stone150);
+    border:none;
+  }
+
+table {
+    width:100%;
+    padding-top: 20px;
+}
+
+td {
+    width:50%;
+    border-bottom: 1px solid var(--stone150);
+    padding: 10px 0 10px 20px;
+}
+
+.value {
+    color: var(--brown800);
+    font-weight: 600;
+}
+
+#nutrition .category-title {
+    margin-bottom: 10px;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
